@@ -16,4 +16,6 @@ jobs:
         run: make test
       - name: runLint
         run: make lint
+      - name: customeAction
+        uses: hexlet-components/hello-from-hexlet-action
 
