@@ -1,13 +1,19 @@
-name: node
+name: nodeWorkflow
 on: push
 jobs:
-  check:
+  checkJob:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-      - run: npm install
-      - run: make setup
-      - run: make test
-      - run: make lint
+      - name: cloneRepo
+        uses: actions/checkout@v4
+      - name: cloneNodeSource
+        uses: actions/setup-node@v4
+      - name: installNmp
+        run: npm install
+      - name: setupApp
+        run: make setup
+      - name: testApp
+        run: make test
+      - name: runLint
+        run: make lint
 
