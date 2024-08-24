@@ -1,3 +1,5 @@
+[![nodeWorkflow](https://github.com/roman-iork/hexlet-ci-app/actions/workflows/testNodeFlow.yml/badge.svg)](https://github.com/roman-iork/hexlet-ci-app/actions/workflows/testNodeFlow.yml)
+
 # Example app for CI Hexlet course
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
